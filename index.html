@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="icon" href="/icon/Help.png" alt="Emergency Icon">
     <title>Emergency Call Help App</title>
 </head>
@@ -27,18 +28,18 @@
                     class="mt-1 p-2 border rounded w-full"></textarea>
             </div>
             <label for="callButton" class="sr-only">Call Emergency Number</label>
-            <button type="button" id="callButton" onclick="makeEmergencyCall()"
-                class="bg-red-500 text-white p-2 rounded w-full">Call</button>
-
+            <button type="button" onclick="makeEmergencyCall()" class="bg-red-500 text-white p-2 rounded w-full">
+                <i class="fas fa-phone"></i> Call
+            </button>
         </form>
 
         <!-- Emergency Call Links -->
         <div class="mt-4">
             <p class="text-sm font-medium text-gray-600">Quick Emergency Numbers:</p>
             <ul class="mt-2">
-                <li><a href="tel:100" class="text-blue-500">Police: 100</a></li>
-                <li><a href="tel:101" class="text-blue-500">Fire Department: 101</a></li>
-                <li><a href="tel:102" class="text-blue-500">Ambulance: 102</a></li>
+                <li><a href="tel:100" class="text-blue-500"><i class="fas fa-phone"></i> Police: 100</a></li>
+                <li><a href="tel:101" class="text-blue-500"><i class="fas fa-phone"></i> Fire Department: 101</a></li>
+                <li><a href="tel:102" class="text-blue-500"><i class="fas fa-phone"></i> Ambulance: 102</a></li>
                 <!-- Add more emergency numbers as needed -->
             </ul>
         </div>
