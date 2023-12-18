@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Emergency Call Help App</title>
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+    <div class="bg-white p-8 rounded shadow-md w-96">
+        <h1 class="text-2xl font-bold mb-4">Emergency Call Help</h1>
+        <form id="emergencyForm">
+            <div class="mb-4">
+                <label for="emergencyType" class="block text-sm font-medium text-gray-600">Emergency Type</label>
+                <select id="emergencyType" name="emergencyType" class="mt-1 p-2 border rounded w-full">
+                    <option value="police">Police</option>
+                    <option value="fire">Fire Department</option>
+                    <option value="ambulance">Ambulance</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label for="emergencyMessage" class="block text-sm font-medium text-gray-600">Emergency Message</label>
+                <textarea id="emergencyMessage" name="emergencyMessage" rows="3" class="mt-1 p-2 border rounded w-full"></textarea>
+            </div>
+            <button type="button" onclick="makeEmergencyCall()" class="bg-red-500 text-white p-2 rounded w-full">Call</button>
+        </form>
+
+        <!-- Emergency Call Links -->
+        <div class="mt-4">
+            <p class="text-sm font-medium text-gray-600">Quick Emergency Numbers:</p>
+            <ul class="mt-2">
+                <li><a href="tel:911" class="text-blue-500">Police: 100</a></li>
+                <li><a href="tel:911" class="text-blue-500">Fire Department: 101</a></li>
+                <li><a href="tel:911" class="text-blue-500">Ambulance: 102</a></li>
+                <!-- Add more emergency numbers as needed -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
